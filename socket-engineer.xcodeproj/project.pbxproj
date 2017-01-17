@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		16C2583F1E2E1F7E00A10F06 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 16C2583D1E2E1F5F00A10F06 /* main.c */; };
+		16C2584C1E2E2C7F00A10F06 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 16C2584A1E2E25D300A10F06 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		16C258311E2E1F1400A10F06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		16C258451E2E25A700A10F06 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		16C258331E2E1F1400A10F06 /* simple-stream-server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-stream-server"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C2583D1E2E1F5F00A10F06 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "simple-stream-server/main.c"; sourceTree = "<group>"; };
+		16C258491E2E25A700A10F06 /* simple-stream-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-stream-client"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C2584A1E2E25D300A10F06 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "socket-engineer/simple-stream-client/main.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		16C258301E2E1F1400A10F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C258441E2E25A700A10F06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +60,7 @@
 		16C2582A1E2E1F1400A10F06 = {
 			isa = PBXGroup;
 			children = (
+				16C258401E2E258300A10F06 /* simple-stream-client */,
 				16C258351E2E1F1400A10F06 /* simple-stream-server */,
 				16C258341E2E1F1400A10F06 /* Products */,
 			);
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				16C258331E2E1F1400A10F06 /* simple-stream-server */,
+				16C258491E2E25A700A10F06 /* simple-stream-client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +82,14 @@
 			);
 			name = "simple-stream-server";
 			path = "socket-engineer";
+			sourceTree = "<group>";
+		};
+		16C258401E2E258300A10F06 /* simple-stream-client */ = {
+			isa = PBXGroup;
+			children = (
+				16C2584A1E2E25D300A10F06 /* main.c */,
+			);
+			name = "simple-stream-client";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +112,23 @@
 			productReference = 16C258331E2E1F1400A10F06 /* simple-stream-server */;
 			productType = "com.apple.product-type.tool";
 		};
+		16C258411E2E25A700A10F06 /* simple-stream-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C258461E2E25A700A10F06 /* Build configuration list for PBXNativeTarget "simple-stream-client" */;
+			buildPhases = (
+				16C258421E2E25A700A10F06 /* Sources */,
+				16C258441E2E25A700A10F06 /* Frameworks */,
+				16C258451E2E25A700A10F06 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simple-stream-client";
+			productName = "socket-engineer";
+			productReference = 16C258491E2E25A700A10F06 /* simple-stream-client */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +142,9 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = S89FL4F334;
 						ProvisioningStyle = Automatic;
+					};
+					16C258411E2E25A700A10F06 = {
+						DevelopmentTeam = S89FL4F334;
 					};
 				};
 			};
@@ -112,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				16C258321E2E1F1400A10F06 /* simple-stream-server */,
+				16C258411E2E25A700A10F06 /* simple-stream-client */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				16C2583F1E2E1F7E00A10F06 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C258421E2E25A700A10F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C2584C1E2E2C7F00A10F06 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +289,22 @@
 			};
 			name = Release;
 		};
+		16C258471E2E25A700A10F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S89FL4F334;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16C258481E2E25A700A10F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S89FL4F334;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -250,6 +324,15 @@
 				16C2583C1E2E1F1400A10F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		16C258461E2E25A700A10F06 /* Build configuration list for PBXNativeTarget "simple-stream-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C258471E2E25A700A10F06 /* Debug */,
+				16C258481E2E25A700A10F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

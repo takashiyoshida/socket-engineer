@@ -37,7 +37,7 @@ void* get_in_addr(struct sockaddr* sa) {
     return &(((struct sockaddr_in6*)sa)->sin6_addr);
 }
 
-int main(void) {
+int main(int argc, char* argv[]) {
     int sockfd, new_fd; // Listen on sockfd, new connection on new_fd
     struct addrinfo hints, *servinfo, *p;
     struct sockaddr_storage their_addr; // Connector's address information
