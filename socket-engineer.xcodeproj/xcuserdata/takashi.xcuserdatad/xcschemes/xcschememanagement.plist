@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>select-server.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>simple-stream-client.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>16C258411E2E25A700A10F06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>16C2584D1E2E2DA900A10F06</key>
 		<dict>
 			<key>primary</key>
 			<true/>
